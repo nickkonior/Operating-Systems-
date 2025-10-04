@@ -1,2 +1,2 @@
 # Operating-Systems-
-Linux Operating Systams - Multithreading codes
+Linux Operating Systems - Multithreading codes
