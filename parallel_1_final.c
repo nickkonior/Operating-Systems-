@@ -82,6 +82,12 @@ int main(int argc, char *argv[]) {
 
             totalSum = totalSum + localSum;
 
+            // Calculate processors's 0 local max and use it to find global max
+            for (i = 0; i < n / size; i++) {
+                if(allNumbers[i] > totalMax)
+                    totalMax = allNumbers[i];
+            }
+
             // Calculate and print the average
             double average = (double)totalSum / n;
             printf("The average is %.2f\n", average);
